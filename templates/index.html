@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcomixer</title>
+    <link rel="icon" href="../static/icon.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="../static/script.js" defer></script>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="../static/icon.png">
+        <h1>Alcomixer</h1>
+    </div>
+
+    <form>
+        <div class="search_bar">
+            <input type="text" placeholder="Search Cocktail">
+            <img src="../static/search.svg">
+        </div>
+    </form>
+    <div class="content">
+        {%for i in cocktails%}
+        <div class="cocktail">
+            <img src="{{i.image}}">
+            <h2>{{i.name}}</h2>
+            <div class="recepie">
+                <h3> Click To Read More</h3>
+            </div>
+        </div>
+        {%endfor%}
+    <!-- {%block template%}
+
+    {%endblock%} -->
+    </div>
+</body>
+</html>

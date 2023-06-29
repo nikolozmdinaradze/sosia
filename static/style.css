@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    background-repeat:initial;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    font-family: Roboto;
+}
+.logo img{
+    height: 45px;
+    width: 45px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.search_bar{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 8px 20px;
+    width: 50%;
+    box-shadow: 0px 0px 8px #000000;
+}
+.search_bar img{
+    height: 35px;
+    width: 35px;
+    border: none;
+}
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+input[type="text"]{
+    font-size: 29px;
+    /* color:#ee4758; */
+    color: gold;
+    text-shadow: 0px 0px 1px #ee4758;
+    font-family: Roboto;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cocktail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 8px black;
+    justify-content: space-between;
+    padding: 15px 1px;
+    max-width: 210px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f5727f;
+    position: relative;
+}
+.cocktail h2{
+    font-size: 21px;
+    word-wrap: break-word;
+    color: transparent;
+    color: gold;
+}
+
+.cocktail img{
+    height: 200px;
+    width: 200px;
+}
+
+.recepie{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: gray;
+    border-radius: inherit;
+    opacity: 0;
+    
+}
+.recepie h3{
+    font-size: 26px;
+    align-items: center;
+    color: gold;
+    padding-top: 60px;
+}
+.recepie p{
+    font-size: 20px;
+}
+
+.cocktail:hover .recepie{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+    .search_bar{
+        width: 80%;
+    }
+
+  }
+
+@media screen and (max-width: 500px) {
+    .search_bar{
+        width: 90%;
+    }
+
+  }
